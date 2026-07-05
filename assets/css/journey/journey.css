@@ -1,0 +1,177 @@
+/* ======================================================
+CAREER ROADMAP (IMPROVED)
+====================================================== */
+
+.journey{
+    padding:120px 10%;
+    background:var(--card-dark);
+}
+
+.journey h2{
+    text-align:center;
+    font-size:48px;
+    color:var(--primary);
+    margin-bottom:80px;
+}
+
+/* Timeline container */
+.timeline{
+    position:relative;
+    max-width:950px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:70px;
+}
+
+/* Vertical Line (centrada respecto al timeline) */
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translateX(-50%);
+    width:4px;
+    height:100%;
+    background:linear-gradient(
+        to bottom,
+        #38bdf8,
+        #0ea5e9,
+        #22c55e
+    );
+    border-radius:20px;
+    z-index:0;
+}
+
+/* Timeline Item */
+.timeline-item{
+    position:relative;
+    display:flex;
+    flex-direction:column;   /* 🔥 clave para centrar punto arriba */
+    align-items:center;
+    text-align:center;
+    z-index:1;
+}
+
+/* Circle (DOT) */
+.circle{
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:var(--primary);
+    margin-bottom:15px;  /* ahora está arriba */
+    z-index:2;
+    box-shadow:0 0 15px rgba(56,189,248,.6);
+}
+
+/* Future variation */
+.future{
+    background:#22c55e;
+}
+
+/* Card */
+.content{
+    width:100%;
+    max-width:600px;   /* 🔥 iguala todas las tarjetas */
+    min-height:260px;  /* 🔥 uniformidad visual */
+    
+    background:rgba(30,41,59,.90);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:18px;
+    padding:30px;
+
+    transition:.35s;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.content:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 45px rgba(56,189,248,.20);
+}
+
+/* =============================
+Career Header
+============================= */
+
+.career-header{
+    display:flex;
+    align-items:center;
+    justify-content:center; /* centra contenido */
+    flex-direction:column;  /* evita alineación izquierda */
+    gap:10px;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.career-icon{
+    font-size:42px;
+}
+
+.career-header h3{
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.career-header small{
+    color:var(--text-gray);
+    font-size:15px;
+}
+
+/* Description */
+.content p{
+    color:var(--text-light);
+    line-height:1.8;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.journey-section h4{
+    color:var(--primary);
+    margin-top:25px;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+/* Skills */
+.skills-list{
+    margin-left:0;
+    margin-bottom:25px;
+    padding:0;
+    list-style-position:inside;
+    text-align:center;
+}
+
+.skills-list li{
+    margin-bottom:10px;
+    color:var(--text-light);
+}
+
+/* Tech tags */
+.tech-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+}
+
+.tech-tags span{
+    background:rgba(56,189,248,.10);
+    border:1px solid rgba(56,189,248,.35);
+    color:var(--primary);
+    padding:10px 18px;
+    border-radius:40px;
+    font-size:14px;
+    transition:.3s;
+}
+
+.tech-tags span:hover{
+    background:var(--primary);
+    color:white;
+    transform:translateY(-3px);
+}

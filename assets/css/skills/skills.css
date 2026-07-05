@@ -1,0 +1,28 @@
+/* ======================================================
+SKILLS SECTION
+====================================================== */
+
+
+.skill-card{
+
+    background:#0f172a;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    transition:.4s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#38bdf8;
+
+}

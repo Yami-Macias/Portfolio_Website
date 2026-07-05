@@ -1,0 +1,217 @@
+/* ======================================================
+   ABOUT ME
+====================================================== */
+
+.about{
+
+    padding:120px 10%;
+
+    background:var(--card);
+
+}
+
+/* ==========================
+   TITLE
+========================== */
+
+.about h2{
+
+    text-align:center;
+
+    font-size:48px;
+
+    color:var(--primary);
+
+    margin-bottom:70px;
+
+}
+
+/* ==========================
+   LAYOUT
+========================== */
+
+.about-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+/* ==========================
+   LEFT COLUMN
+========================== */
+
+.about-text{
+
+    flex:1;
+
+    max-width:650px;
+
+}
+
+.about-text h3{
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+    color:var(--text);
+
+}
+
+.about-text p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:var(--text-light);
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================
+   RIGHT COLUMN
+========================== */
+
+.about-skills{
+
+    flex:1;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+/* ==========================
+   SKILL CARD
+========================== */
+
+.skill-card{
+
+    background:var(--background);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:30px 25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+/* Hover */
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(56,189,248,.20);
+
+    border-color:var(--primary);
+
+}
+
+/* Emoji */
+
+.skill-card .icon{
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+}
+
+/* Title */
+
+.skill-card h4{
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+    color:var(--text);
+
+}
+
+/* Description */
+
+.skill-card p{
+
+    font-size:15px;
+
+    color:var(--text-gray);
+
+    line-height:1.6;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1000px){
+
+    .about-container{
+
+        flex-direction:column;
+
+    }
+
+    .about-text{
+
+        max-width:100%;
+
+        text-align:center;
+
+    }
+
+    .about-skills{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .about{
+
+        padding:80px 8%;
+
+    }
+
+    .about h2{
+
+        font-size:38px;
+
+    }
+
+    .about-text h3{
+
+        font-size:28px;
+
+    }
+
+    .about-skills{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
