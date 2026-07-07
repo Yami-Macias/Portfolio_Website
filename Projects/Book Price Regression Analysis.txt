@@ -1,0 +1,28 @@
+Book Price Regression Analysis
+This project investigates whether book prices significantly influence the low reading rate among university students.
+
+Business / Research Question
+
+Can textbook prices explain the low reading habits observed within the faculty?
+
+Methodology
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Linear Regression
+- Correlation Analysis
+- Data Visualization
+
+Technologies
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+
+Results
+The regression model evaluated none relationship between book prices and reading behavior, providing statistical evidence to support academic decision-making.
+
+Visualizations
+- Scatter Plot
+- Regression Line
+- Correlation Matrix

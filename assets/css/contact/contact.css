@@ -1,3 +1,162 @@
 /* ======================================================
 CONTACT DESIGN
 ====================================================== */
+/* ==========================
+CONTACT
+========================== */
+
+.contact{
+
+    padding:100px 10%;
+
+    background:var(--background);
+
+}
+
+.contact h2{
+
+    text-align:center;
+
+    font-size:45px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.contact-subtitle{
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:var(--text-light);
+
+    margin-bottom:60px;
+
+    line-height:1.8;
+
+}
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    gap:60px;
+
+}
+
+.contact-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-card{
+
+    background:var(--card);
+
+    padding:25px;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.contact-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.contact-card p{
+
+    color:var(--text-light);
+
+}
+
+.contact-card a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+.contact-card a:hover{
+
+    color:var(--primary);
+
+}
+
+/* FORM */
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+    background:var(--card);
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:18px;
+
+    color:white;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+.contact-form input:focus,
+
+.contact-form textarea:focus{
+
+    border:2px solid var(--primary);
+
+}
+
+.contact-form textarea{
+
+    resize:none;
+
+}
+
+.contact-form button{
+
+    width:220px;
+
+}

@@ -1,28 +1,111 @@
 /* ======================================================
-SKILLS SECTION
+TECHNICAL SKILLS
 ====================================================== */
 
-
-.skill-card{
-
-    background:#0f172a;
-
-    padding:25px;
-
-    border-radius:12px;
-
-    text-align:center;
-
-    font-size:18px;
-
-    transition:.4s;
-
+.skills{
+    padding:120px 10%;
+    background:var(--bg-dark);
 }
 
-.skill-card:hover{
+.skills h2{
+    text-align:center;
+    font-size:48px;
+    color:var(--primary);
+    margin-bottom:70px;
+}
 
+/* Grid */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+/* Category Card */
+
+.category{
+    background:rgba(30,41,59,.90);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:18px;
+    padding:30px;
+    transition:.35s;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    display:flex;
+    flex-direction:column;
+}
+
+.category:hover{
     transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(56,189,248,.18);
+}
 
-    background:#38bdf8;
+.category h3{
+    text-align:center;
+    color:var(--primary);
+    font-size:24px;
+    margin-bottom:30px;
+}
+
+/* Individual Skill */
+
+.skill{
+    margin-bottom:22px;
+}
+
+.skill:last-child{
+    margin-bottom:0;
+}
+
+.skill span{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+    font-weight:500;
+    color:var(--text-light);
+}
+
+/* Progress Track */
+
+.progress{
+    width:100%;
+    height:10px;
+    background:rgba(255,255,255,.08);
+    border-radius:20px;
+    overflow:hidden;
+}
+
+/* Progress Fill */
+
+.progress-bar{
+    height:100%;
+    border-radius:20px;
+    background:linear-gradient(90deg,#38bdf8,#0ea5e9);
+    animation:fillBar 1.8s ease forwards;
+}
+
+/* Skill Levels */
+
+.python{width:60%;}
+.sql{width:60%;}
+.vba{width:85%;}
+
+.powerbi{width:70%;}
+.excel{width:95%;}
+.powerquery{width:75%;}
+
+.procurement{width:85%;}
+.supply{width:80%;}
+.erp{width:90%;}
+
+/* Animation */
+
+@keyframes fillBar{
+
+    from{
+        width:0;
+    }
 
 }
